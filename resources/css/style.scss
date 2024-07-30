@@ -1,0 +1,53 @@
+// styles.scss
+
+@import "./Sass/Utilities/variables";
+@import "./Sass/Utilities/themes";
+@import "./Sass/Components/accordion";
+@import "./Sass/Components/accrediation";
+@import "./Sass/Components/buttons";
+@import "./Sass/Components/card";
+@import "./Sass/Components/footer";
+@import "./Sass/Components/nav";
+@import "./Sass/Utilities/assets";
+@import "./Sass/Utilities/global";
+
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.bg-gold {
+  background-color: $primary;
+}
+
+.vidyard-player-container {
+  box-shadow: 0 11px 25px rgba(0, 0, 0, 1.1);
+}
+
+.pride-section {
+  background: linear-gradient(64deg, #2066A2 67%, transparent 67%), url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/60e9ef2b-87ce-49d5-8770-ef23e0b173f8.jpg);
+  background-size: contain;
+  background-position: right top;
+  height: 500px;
+}
+
+@media only screen and (max-width: 990px) {
+  .pride-section {
+      background: linear-gradient(64deg, #2066A2 100%, transparent 60%);
+      background-size: auto;
+      background-position: right top;
+      height: 500px;
+  }
+
+  .white-bg-small {
+    background-color: #fff;
+  }
+}
+
+  
+  
+  
+ 
+  
+  
+ 
+  
