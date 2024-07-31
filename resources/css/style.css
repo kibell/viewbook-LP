@@ -165,7 +165,6 @@ $font-size-7xl: 4rem; /*64px */
 $font-size-7xl: 4rem; /*64px */
 section {
   padding: 3rem;
-  margin: 2rem 0 2rem 0;
 }
 
 h1 {
@@ -325,7 +324,6 @@ footer.mobile {
 $font-size-7xl: 4rem; /*64px */
 section {
   padding: 3rem;
-  margin: 2rem 0 2rem 0;
 }
 
 h1 {
@@ -411,6 +409,20 @@ body {
   height: 500px;
 }
 
+.scroll-container {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.neg-mt-5 {
+  margin-top: -3rem;
+}
+
+.bg-skyblue {
+  background-color: #009dea;
+}
+
 @media only screen and (max-width: 990px) {
   .pride-section {
     background: linear-gradient(64deg, #2066A2 100%, transparent 60%);
@@ -420,5 +432,8 @@ body {
   }
   .white-bg-small {
     background-color: #fff;
+  }
+  .snap-point {
+    scroll-snap-align: start;
   }
 }/*# sourceMappingURL=style.css.map */
