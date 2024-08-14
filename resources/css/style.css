@@ -163,10 +163,6 @@ $font-size-7xl: 4rem; /*64px */
 /* 36px */
 /* 40px  h1 tag* /
 $font-size-7xl: 4rem; /*64px */
-section {
-  padding: 3rem;
-}
-
 h1 {
   color: #0a3370;
   font-size: 2.5rem;
@@ -322,10 +318,6 @@ footer.mobile {
 /* 36px */
 /* 40px  h1 tag* /
 $font-size-7xl: 4rem; /*64px */
-section {
-  padding: 3rem;
-}
-
 h1 {
   color: #0a3370;
   font-size: 2.5rem;
@@ -420,7 +412,152 @@ body {
 }
 
 .bg-skyblue {
-  background-color: #2066a2;
+  background-color: #3299D5;
+}
+
+.linear {
+  background: linear-gradient(to bottom, transparent 15%, #3299D5 15%, #3299D5 85%, transparent 85%);
+}
+
+.linear-gold {
+  background: linear-gradient(to bottom, transparent 15%, #fdb913 15%, #fdb913 85%, transparent 85%);
+}
+
+.highlight {
+  background-color: #fdb913;
+}
+
+.one-of-us {
+  background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/6df8dc96-0879-4f35-be41-6c5895a80f20.png);
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 60px 0; /* Optional: Adds padding to the top and bottom of the section */
+  color: white; /* Optional: Change text color for contrast */
+  height: 84vh;
+}
+
+.image-video-container {
+  position: relative;
+  left: 24%;
+}
+
+.background-image {
+  display: block;
+  width: 49%;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.overlay-video {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-59%, -39%);
+  height: 360px;
+  width: 197px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.image-video-container-r {
+  position: relative;
+  left: 24%;
+}
+
+.background-image-r {
+  display: block;
+  width: 62%;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.overlay-video-r {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-45%, -52%);
+  height: 360px;
+  width: 197px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.background-image-art {
+  display: block;
+  width: 71%;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.overlay-video-art {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-28%, -56%);
+  height: 360px;
+  width: 197px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.background-image-sport {
+  display: block;
+  width: 76%;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.overlay-video-sport {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-28%, -52%);
+  height: 360px;
+  width: 197px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.overlay-video-sport {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-22%, -52%);
+  height: 360px;
+  width: 197px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.overlay-video-man {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-14%, -52%);
+  height: 360px;
+  width: 197px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.icon-text {
+  color: #0D2D65;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 148%; /* 26.64px */
 }
 
 @media only screen and (max-width: 990px) {
