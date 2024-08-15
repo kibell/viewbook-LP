@@ -602,7 +602,19 @@ body {
     width: 111%;
   }
   .bg-img-art, .bg-img-tech, .bg-img-sport {
-    width: 130%;
+    width: 100%;
+  }
+  .tech {
+    height: 284px;
+    width: 156px;
+  }
+  .art {
+    height: 233px;
+    width: 133px;
+  }
+  .sport, .esport, .manchester {
+    height: 255px;
+    width: 151px;
   }
   .bg-image-art {
     width: 84%;
