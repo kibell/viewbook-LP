@@ -419,7 +419,7 @@ body {
   background-color: #3299D5;
 }
 
-.linear {
+.linear, .linear-b {
   background: linear-gradient(to bottom, transparent 15%, #3299D5 15%, #3299D5 85%, transparent 85%);
 }
 
@@ -563,6 +563,10 @@ body {
   display: none;
 }
 
+.icon-love {
+  width: 70%;
+}
+
 @media only screen and (max-width: 990px) {
   .pride-section {
     background: linear-gradient(64deg, #2066A2 100%, transparent 60%);
@@ -588,7 +592,44 @@ body {
   .jumbo-btns {
     justify-content: center;
   }
-  .love-it {
-    transform: translate(-52%, -39%);
+  .background-image {
+    width: 73%;
+  }
+  .icon-love {
+    width: 33%;
+  }
+  .bg-img-support, .bg-img-business, .bg-img-dorm, .bg-img-tech {
+    width: 100%;
+  }
+  .bg-image-art {
+    width: 84%;
+  }
+  .linear {
+    background: linear-gradient(to bottom, transparent 38%, #3299D5 38%, #3299D5 100%);
+    height: 45rem;
+  }
+  .linear-b {
+    background: linear-gradient(to bottom, transparent 30%, #3299D5 30%, #3299D5 100%);
+    padding: 3rem;
+  }
+  .linear-gold {
+    background: linear-gradient(to bottom, transparent 25%, #fdb913 25%, #fdb913 100%);
+    height: 35rem;
+  }
+  .btn-group-wait {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .group-img {
+    margin-bottom: 50px;
+  }
+  .booked-img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .book-text {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
