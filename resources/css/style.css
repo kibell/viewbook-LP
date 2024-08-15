@@ -390,21 +390,11 @@ body {
   background-color: #fdb913;
 }
 
-.vidyard-player-container {
-  box-shadow: 0 11px 25px rgb(0, 0, 0);
-}
-
 .pride-section {
   background: linear-gradient(64deg, #2066A2 67%, transparent 67%), url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/60e9ef2b-87ce-49d5-8770-ef23e0b173f8.jpg);
   background-size: contain;
   background-position: right top;
   height: 500px;
-}
-
-.scroll-container {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: 100vh;
 }
 
 .neg-mt-5 {
