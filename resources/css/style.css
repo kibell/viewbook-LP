@@ -598,8 +598,11 @@ body {
   .icon-love {
     width: 33%;
   }
-  .bg-img-support, .bg-img-business, .bg-img-dorm, .bg-img-tech {
-    width: 100%;
+  .bg-img-support, .bg-img-business, .bg-img-dorm {
+    width: 111%;
+  }
+  .bg-img-art, .bg-img-tech, .bg-img-sport {
+    width: 130%;
   }
   .bg-image-art {
     width: 84%;

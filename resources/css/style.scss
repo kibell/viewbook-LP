@@ -244,8 +244,12 @@ line-height: 148%; /* 23.68px */
     width: 33%;
   }
 
-  .bg-img-support, .bg-img-business, .bg-img-dorm, .bg-img-tech {
-    width: 100%
+  .bg-img-support, .bg-img-business, .bg-img-dorm {
+    width: 111%
+  }
+
+  .bg-img-art, .bg-img-tech, .bg-img-sport {
+    width: 130%
   }
 
   .bg-image-art {
@@ -286,6 +290,7 @@ line-height: 148%; /* 23.68px */
   .book-text {
     text-align: center;
   }
+
 }
 
   
