@@ -464,56 +464,74 @@ body {
 
 .background-image {
   display: block;
-  width: 49%;
+  width: 100%;
   pointer-events: none;
   position: relative;
   z-index: 2;
 }
 
 .bg-image-art {
-  width: 84%;
+  width: 100%;
 }
 
 .bg-img-tech {
-  width: 71%;
+  width: 100%;
 }
 
 .bg-img-support, .bg-img-business, .bg-img-dorm {
-  width: 63%;
+  width: 100%;
 }
 
 .bg-img-sport {
-  width: 79%;
+  width: 100%;
 }
 
 .overlay-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 360px;
-  width: 203px;
+  height: 65%;
+  width: 38%;
   z-index: 1;
   border-radius: 20px;
 }
 
 .love-it {
   transform: translate(-52%, -39%);
+  height: 65%;
+  width: 78%;
 }
 
 .dorm, .business, .support {
   transform: translate(-52%, -52%);
 }
 
-.art, .tech {
-  transform: translate(-52%, -56%);
+.business {
+  height: 78%;
+  width: 51%;
 }
 
-.sport {
+.support, .dorm {
+  height: 77%;
+  width: 50%;
+}
+
+.art, .tech {
+  transform: translate(-52%, -56%);
+  height: 75%;
+  width: 44%;
+}
+
+.sport, .manchester {
   transform: translate(-59%, -52%);
+  height: 61%;
+  width: 42%;
 }
 
 .esport {
   transform: translate(-54%, -52%);
+  height: 61%;
+  width: 42%;
 }
 
 .manchester {
@@ -567,7 +585,74 @@ body {
   width: 70%;
 }
 
+@media only screen and (max-width: 1400px) {
+  .background-image {
+    width: 100%;
+  }
+  .love-it {
+    height: 64%;
+    width: 78%;
+  }
+  .dorm {
+    height: 81%;
+    width: 51%;
+  }
+  .art {
+    height: 74%;
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .background-image {
+    width: 100%;
+  }
+  .linear {
+    background: linear-gradient(to bottom, transparent 15%, #3299D5 15%, #3299D5 85%, transparent 85%);
+  }
+  .love-it {
+    height: 65%;
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 990px) {
+  .linear {
+    background: linear-gradient(to bottom, transparent 5%, #3299D5 5%, #3299D5 100%, transparent 100%);
+    padding: 3rem;
+  }
+  .bg-image-art {
+    width: 100%;
+  }
+  .art {
+    height: 76%;
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 761px) {
+  .overlay-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65%;
+    width: 38%;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  .love-it {
+    height: 65%;
+    width: 57%;
+  }
+  .dorm {
+    height: 79%;
+    width: 51%;
+  }
+  .sport, .esport, .manchester {
+    height: 61%;
+    width: 42%;
+  }
+  .business, .support {
+    height: 77%;
+    width: 51%;
+  }
   .pride-section {
     background: linear-gradient(64deg, #2066A2 100%, transparent 60%);
     background-size: auto;
@@ -599,29 +684,26 @@ body {
     width: 33%;
   }
   .bg-img-support, .bg-img-business, .bg-img-dorm {
-    width: 111%;
+    width: 100%;
   }
   .bg-img-art, .bg-img-tech, .bg-img-sport {
     width: 100%;
   }
   .tech {
-    height: 284px;
-    width: 156px;
+    height: 76%;
+    width: 44%;
   }
   .art {
-    height: 233px;
-    width: 133px;
-  }
-  .sport, .esport, .manchester {
-    height: 255px;
-    width: 151px;
+    height: 76%;
+    width: 38%;
   }
   .bg-image-art {
     width: 84%;
   }
   .linear {
     background: linear-gradient(to bottom, transparent 38%, #3299D5 38%, #3299D5 100%);
-    height: 45rem;
+    height: auto;
+    padding: 3rem;
   }
   .linear-b {
     background: linear-gradient(to bottom, transparent 30%, #3299D5 30%, #3299D5 100%);
