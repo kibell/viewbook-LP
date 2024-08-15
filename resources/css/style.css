@@ -172,7 +172,7 @@ h1 {
 
 h2 {
   margin-bottom: 1.5rem;
-  color: #00244e;
+  color: #0D2D65;
   font-weight: 700;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
@@ -327,7 +327,7 @@ h1 {
 
 h2 {
   margin-bottom: 1.5rem;
-  color: #00244e;
+  color: #0D2D65;
   font-weight: 700;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
@@ -411,6 +411,10 @@ body {
   margin-top: -3rem;
 }
 
+.gap-32 {
+  gap: 32px;
+}
+
 .bg-skyblue {
   background-color: #3299D5;
 }
@@ -425,6 +429,7 @@ body {
 
 .highlight {
   background-color: #fdb913;
+  line-height: 1.5;
 }
 
 .one-of-us {
@@ -434,12 +439,27 @@ body {
   background-repeat: no-repeat; /* Prevents the image from repeating */
   padding: 60px 0; /* Optional: Adds padding to the top and bottom of the section */
   color: white; /* Optional: Change text color for contrast */
-  height: 84vh;
+  height: 500px;
 }
 
 .image-video-container {
   position: relative;
-  left: 24%;
+  justify-content: center;
+  display: flex;
+}
+
+.dropdown-toggle {
+  color: #00244E;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 26px */
+  background-color: transparent;
+  border-color: transparent;
+  width: 25%;
+  text-align: left;
 }
 
 .background-image {
@@ -450,99 +470,54 @@ body {
   z-index: 2;
 }
 
+.bg-image-art {
+  width: 84%;
+}
+
+.bg-img-tech {
+  width: 71%;
+}
+
+.bg-img-support, .bg-img-business, .bg-img-dorm {
+  width: 63%;
+}
+
+.bg-img-sport {
+  width: 79%;
+}
+
 .overlay-video {
   position: absolute;
   top: 50%;
-  left: 28%;
-  transform: translate(-59%, -39%);
+  left: 50%;
   height: 360px;
-  width: 197px;
+  width: 203px;
   z-index: 1;
   border-radius: 20px;
 }
 
-.image-video-container-r {
-  position: relative;
-  left: 24%;
+.love-it {
+  transform: translate(-52%, -39%);
 }
 
-.background-image-r {
-  display: block;
-  width: 62%;
-  pointer-events: none;
-  position: relative;
-  z-index: 2;
+.dorm, .business, .support {
+  transform: translate(-52%, -52%);
 }
 
-.overlay-video-r {
-  position: absolute;
-  top: 50%;
-  left: 28%;
+.art, .tech {
+  transform: translate(-52%, -56%);
+}
+
+.sport {
+  transform: translate(-59%, -52%);
+}
+
+.esport {
+  transform: translate(-54%, -52%);
+}
+
+.manchester {
   transform: translate(-45%, -52%);
-  height: 360px;
-  width: 197px;
-  z-index: 1;
-  border-radius: 20px;
-}
-
-.background-image-art {
-  display: block;
-  width: 71%;
-  pointer-events: none;
-  position: relative;
-  z-index: 2;
-}
-
-.overlay-video-art {
-  position: absolute;
-  top: 50%;
-  left: 28%;
-  transform: translate(-28%, -56%);
-  height: 360px;
-  width: 197px;
-  z-index: 1;
-  border-radius: 20px;
-}
-
-.background-image-sport {
-  display: block;
-  width: 76%;
-  pointer-events: none;
-  position: relative;
-  z-index: 2;
-}
-
-.overlay-video-sport {
-  position: absolute;
-  top: 50%;
-  left: 28%;
-  transform: translate(-28%, -52%);
-  height: 360px;
-  width: 197px;
-  z-index: 1;
-  border-radius: 20px;
-}
-
-.overlay-video-sport {
-  position: absolute;
-  top: 50%;
-  left: 28%;
-  transform: translate(-22%, -52%);
-  height: 360px;
-  width: 197px;
-  z-index: 1;
-  border-radius: 20px;
-}
-
-.overlay-video-man {
-  position: absolute;
-  top: 50%;
-  left: 28%;
-  transform: translate(-14%, -52%);
-  height: 360px;
-  width: 197px;
-  z-index: 1;
-  border-radius: 20px;
 }
 
 .w-70 {
@@ -560,6 +535,34 @@ body {
   line-height: 148%; /* 26.64px */
 }
 
+.parent-text {
+  color: #0D2D65;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Oswald;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112%; /* 44.8px */
+}
+
+.parent-text-p {
+  color: #0B1A32;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%; /* 23.68px */
+}
+
+.accordion-button {
+  background-color: #F9F9F9 !important;
+}
+
+.mobile-like-us {
+  display: none;
+}
+
 @media only screen and (max-width: 990px) {
   .pride-section {
     background: linear-gradient(64deg, #2066A2 100%, transparent 60%);
@@ -570,7 +573,22 @@ body {
   .white-bg-small {
     background-color: #fff;
   }
-  .snap-point {
-    scroll-snap-align: start;
+  .jumbo-head-text {
+    text-align: center;
+  }
+  .one-of-us {
+    background-image: none;
+    padding: 0;
+    color: white;
+    height: auto;
+  }
+  .mobile-like-us {
+    display: block;
+  }
+  .jumbo-btns {
+    justify-content: center;
+  }
+  .love-it {
+    transform: translate(-52%, -39%);
   }
 }/*# sourceMappingURL=style.css.map */
