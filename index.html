@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="ROBOTS" content="INDEX,FOLLOW">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
+  <meta name="robots" content="noindex,nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> ViewBook </title>
+  <title> One of us </title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -23,6 +21,582 @@
 
 
   <style>
+ .row {
+  padding: 3rem;   
+    }
+    
+.ink-blue {
+  color: #00244e;
+}
+
+.heritage {
+  color: #0a3370;
+}
+
+.bg-lightgray {
+  background: #F3F3F3;
+}
+
+.accordion-header {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #0a3370;
+}
+
+.accordion-button.collapsed::after {
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-size: 1rem;
+  color: #0a3370;
+  float: right;
+  background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  color: #0a3370;
+  float: right;
+  font-size: 1.25rem;
+  background-image: none;
+  transform: none;
+}
+
+.concentrations-accordion-btn::after {
+  margin-left: 1rem !important;
+}
+
+.btn {
+  padding: 0.6rem 0.9rem;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #fdb913;
+  border-color: #fdb913;
+  color: #0a3370;
+}
+.btn-primary:hover {
+  background-color: #fee097;
+  border-color: #fee097;
+  color: #0a3370;
+}
+
+.btn-secondary {
+  background-color: #0a3370;
+  border-color: #0a3370;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #0a3370;
+}
+
+.chat-btn {
+  position: fixed;
+  transform: rotate(-90deg);
+  right: -22px;
+  top: 70vh;
+  z-index: 1;
+  font-weight: 600;
+  font-size: var(--font-size-md);
+}
+
+.accordion-transparent-bg{
+  background-color: transparent !important;
+  border: none !important;
+  }
+
+@media only screen and (max-width: 576px) {
+  .mobile-btn-w {
+    width: 100%;
+    margin-bottom: 0.275rem;
+  }
+}
+.card-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a3370;
+  font-family: "Open Sans", sans-serif;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.card-info-header {
+  color: #0a3370;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-paragraph {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.min-h-18 {
+  min-height: 18rem;
+}
+
+.snhu-logo-footer {
+  height: auto;
+  width: 100%;
+}
+
+footer {
+  background-color: #00244E !important;
+  color: #FFFFFF;
+}
+
+footer p, footer a {
+  color: #FFFFFF;
+}
+
+footer a {
+  font-size: 1rem;
+}
+
+footer.mobile {
+  display: none;
+}
+
+.navbar {
+  background-color: #00244e;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar > .container {
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+h1 {
+  color: #0a3370;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #0D2D65;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  color: #2066a2;
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+}
+
+p,
+li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #00244e;
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a.head-link {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.head-link:hover,
+a.head-link:focus {
+  -webkit-text-decoration: underline #70abdb 2px;
+          text-decoration: underline #70abdb 2px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+a {
+  color: #0a3370;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .sm-col-rev {
+    flex-direction: column-reverse !important;
+  }
+}
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.bg-gold {
+  background-color: #fdb913;
+}
+
+.pride-section {
+  background: linear-gradient(64deg, #2066A2 67%, transparent 67%), url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/60e9ef2b-87ce-49d5-8770-ef23e0b173f8.jpg);
+  background-size: contain;
+  background-position: right top;
+  height: 500px;
+}
+
+.neg-mt-5 {
+  margin-top: -3rem;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.bg-skyblue {
+  background-color: #3299D5;
+}
+
+.linear, .linear-b {
+  background: linear-gradient(to bottom, transparent 15%, #3299D5 15%, #3299D5 85%, transparent 85%);
+}
+
+.linear-gold {
+  background: linear-gradient(to bottom, transparent 15%, #fdb913 15%, #fdb913 85%, transparent 85%);
+}
+
+.highlight {
+  background-color: #fdb913;
+  line-height: 1.5;
+}
+
+.one-of-us {
+  background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/6df8dc96-0879-4f35-be41-6c5895a80f20.png);
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 60px 0; /* Optional: Adds padding to the top and bottom of the section */
+  color: white; /* Optional: Change text color for contrast */
+  height: 600px;
+}
+
+.image-video-container {
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.dropdown-btn {
+  color: #00244E;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 26px */
+  background-color: transparent;
+  border-color: transparent;
+  width: 100%;
+  text-align: left;
+  padding-left: 0 ;
+}
+
+.background-image {
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-image-art {
+  width: 100%;
+}
+
+.bg-img-tech {
+  width: 100%;
+}
+
+.bg-img-support, .bg-img-business, .bg-img-dorm {
+  width: 100%;
+}
+
+.bg-img-sport {
+  width: 100%;
+}
+
+.overlay-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65%;
+  width: 38%;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.love-it {
+  transform: translate(-52%, -39%);
+  height: 65%;
+  width: 78%;
+}
+
+.dorm, .support {
+  transform: translate(-52%, -52%);
+}
+
+.business {
+  transform: translate(-48%, -55%);
+  height: 77%;
+    width: 44%;
+}
+
+.support, .dorm {
+  height: 77%;
+  width: 50%;
+}
+
+.art, .tech {
+  transform: translate(-52%, -56%);
+  height: 75%;
+  width: 44%;
+}
+
+.sport, .manchester {
+  transform: translate(-59%, -52%);
+  height: 61%;
+  width: 42%;
+}
+
+.esport {
+  transform: translate(-54%, -52%);
+  height: 61%;
+  width: 42%;
+}
+
+.manchester {
+  transform: translate(-45%, -52%);
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.icon-text {
+  color: #0D2D65;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 148%; /* 26.64px */
+}
+
+.parent-text {
+  color: #0D2D65;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Oswald;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112%; /* 44.8px */
+}
+
+.parent-text-p {
+  color: #0B1A32;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%; /* 23.68px */
+}
+
+.accordion-button:not(.accordion-transparent-bg) {
+  background-color: #F9F9F9 !important;
+}
+
+.mobile-like-us {
+  display: none;
+}
+
+.icon-love {
+  width: 70%;
+}
+
+.sticky-top {
+            position: fixed;
+            top: 0;
+            z-index: 1030; /* Ensures it stays on top of other elements */
+           width: 100%;
+            padding: 10px 0; 
+}
+
+@media only screen and (max-width: 1400px) {
+  .background-image {
+    width: 100%;
+  }
+  .love-it {
+    height: 64%;
+    width: 78%;
+  }
+  .dorm {
+    height: 81%;
+    width: 51%;
+  }
+  .art {
+    height: 74%;
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .background-image {
+    width: 100%;
+  }
+  .linear {
+    background: linear-gradient(to bottom, transparent 15%, #3299D5 15%, #3299D5 85%, transparent 85%);
+  }
+  .love-it {
+    height: 65%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .linear {
+    background: linear-gradient(to bottom, transparent 5%, #3299D5 5%, #3299D5 100%, transparent 100%);
+   
+  }
+  .bg-image-art {
+    width: 100%;
+  }
+  .art {
+    height: 76%;
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 761px) {
+  .overlay-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65%;
+    width: 38%;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  .love-it {
+    height: 65%;
+    width: 57%;
+  }
+  .dorm {
+    height: 79%;
+    width: 51%;
+  }
+  .sport, .esport, .manchester {
+    height: 61%;
+    width: 42%;
+  }
+  .support {
+    height: 77%;
+    width: 51%;
+  }
+  
+  .business {
+    height: 77%;
+    width: 44%;
+  }
+  .pride-section {
+    background: linear-gradient(64deg, #2066A2 100%, transparent 60%);
+    background-size: auto;
+    background-position: right top;
+    height: 500px;
+  }
+  .white-bg-small {
+    background-color: #fff;
+  }
+  .jumbo-head-text {
+    text-align: center;
+  }
+  .one-of-us {
+    background-image: none;
+    padding: 0;
+    color: white;
+    height: auto;
+    margin-top: 12rem !important;
+  }
+  .mobile-like-us {
+    display: block;
+  }
+  .jumbo-btns {
+    justify-content: center;
+  }
+  .background-image {
+    width: 73%;
+  }
+  .icon-love {
+    width: 33%;
+  }
+  .bg-img-support, .bg-img-business, .bg-img-dorm {
+    width: 100%;
+  }
+  .bg-img-art, .bg-img-tech, .bg-img-sport {
+    width: 100%;
+  }
+  .tech {
+    height: 76%;
+    width: 44%;
+  }
+  .art {
+    height: 76%;
+    width: 38%;
+  }
+  .bg-image-art {
+    width: 84%;
+  }
+  .linear {
+    background: linear-gradient(to bottom, transparent 38%, #3299D5 38%, #3299D5 100%);
+    height: auto;
+  }
+  .linear-b {
+    background: linear-gradient(to bottom, transparent 25%, #3299D5 25%, #3299D5 100%);
+  }
+  .linear-gold {
+    background: linear-gradient(to bottom, transparent 20%, #fdb913 20%, #fdb913 100%);
+  }
+  .btn-group-wait {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .group-img {
+    margin-bottom: 50px;
+  }
+  .booked-img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .book-text {
+    text-align: center;
+  }
+}
 
   </style>
   <!--[if lt IE 9]>
@@ -115,19 +689,19 @@
   <!-- Header + Nav -->
 
   <header>
-    <nav class="navbar navbar-expand-lg p-3">
+    <nav class="navbar navbar-expand-lg p-3 sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="https://www.snhu.edu/">
+        <a class="navbar-brand" href="https://campus.snhu.edu/" target="_blank">
           <img
             src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
             alt="SNHU Logo" height="80">
         </a>
         <div class=" justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a href="https://www.snhu.edu/admission/apply-now" class="nav-link head-link mx-3" target="_blank">Apply</a>
-            <a href="https://www.snhu.edu/admission/campus-admission/campus-tours-and-admission-events"
+            <a id="apply-nav" href="https://www.snhu.edu/admission/campus-admission" class="nav-link head-link mx-3" target="_blank">Apply</a>
+            <a id="schedule-visit-nav" href="https://cloud.dream.snhu.edu/campus-event-listing-directory#campusevents"
               class="nav-link head-link mx-3 " target="_blank">Visit</a>
-            <a href="mailto:admissions@snhu.edu" class="nav-link head-link mx-3" target="_blank">Email</a>
+            <a href="mailto:admission@snhu.edu" class="nav-link head-link mx-3" target="_blank">Email</a>
             <a href="tel:6036459611" class="nav-link head-link mx-3 " target="_blank">Phone</a>
 
           </div>
@@ -135,20 +709,21 @@
       </div>
     </nav>
   </header>
-  <section class="one-of-us d-flex align-items-center">
+  <div class="content">
+  <section class="one-of-us d-flex align-items-center mt-5">
     <div class="container">
       <div class="row">
         <div class="col-md-5 col-sm-12">
-          <h1 class="jumbo-head-text">See what it's like to <br> be <span class="highlight "> one of us </span></h1>
+          <h1 class="jumbo-head-text">See what it's like to <br> be <span class="highlight ">&nbsp;one of us&nbsp; </span></h1>
           <img class="mobile-like-us p-0 my-4 w-100"
             src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/c45bb1b7-75c9-41e7-af32-4a4f15cc5dd2.png"
             alt="Students hanging out">
-          <p>At Southern New Hampshire University, we are leaders, innovators, creators, builders, and doers. We are
-            explorers — discovering our interests, strengths and how we want to change the world for the better.</p>
+          <p>Welcome to the campus of Southern New Hampshire University! Here, we are leaders, innovators, creators, builders and doers. We are
+            explorers — discovering our interests, strengths and how we want to change the world for the better.<br><br>Free application for U.S. residents!</p>
           <br>
           <div class="d-flex gap-32 jumbo-btns">
-            <a class="btn btn-primary ">Apply Free</a>
-            <a class="btn btn-primary ml-3">Schedule Visit</a>
+             <a id="apply-head" href="https://www.snhu.edu/admission/campus-admission" class="btn btn-primary" target="_blank" onclick="fbq('track', 'SubmitApplication'); ttq.track('SubmitForm'); snaptr('track', 'CUSTOM_EVENT_1');">Apply Now</a>
+            <a id="schedule-visit-head" href="https://cloud.dream.snhu.edu/campus-event-listing-directory#campusevents" class="btn btn-primary ml-3" target="_blank">Schedule Visit</a>
           </div>
         </div>
         <div class="col-md-6"></div>
@@ -164,19 +739,18 @@
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/90e29a8d-9713-4a54-8501-6d871b59b7d7.png"
               alt="Background Image" class="background-image">
-            <iframe class="vidyard_iframe overlay-video love-it" title="SNHU — You're one of us! '24"
-              src="//play.vidyard.com/pnPZX3q9mTS3gfwzKbEyy1.html?" data-autoplay="0" width="640" height="360"
-              scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <iframe class="vidyard_iframe overlay-video love-it" title="Duplicate of SNHU — You're one of us! '24" src="//play.vidyard.com/CP9tuZRm3UyRpMbFjgX4Fo.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+
           </div>
 
           
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-7 d-flex flex-column justify-content-center">
-          <h2>You’re going to love it here</h2>
-          <p>We are also friends, roommates, study partners, teammates and fans who share our love for the SNHU campus
-            community. And we can’t wait to meet you. (So schedule a visit, already!) </p>
+          <h2>You’re going to love it here!</h2>
+          <p>We're also friends, roommates, study partners, teammates and fans who share our love for the SNHU campus
+            community. And we can’t wait to meet you. (So schedule a visit!) </p>
           <div class="row d-flex text-center align-items-end">
             <div class="col-md-3 col-sm-6 col-xs-6 ">
               <img
@@ -215,19 +789,17 @@
     <div class="container">
       <div class="row sm-col-rev ">
         <div class="col-md-6 d-flex flex-column justify-content-center">
-          <h2>First, you’re going to love your dorm</h2>
+          <h2>You’re going to love your dorm!</h2>
           <p>Our modern residence halls, dorm rooms, apartments and suites are close to your classrooms and designed for
-            student safety and comfort. And they feel like home. </p>
+            your safety and comfort. They also feel like home. </p>
 
         </div>
         <div class="col-md-6 ">
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/0c9fdcff-d9f5-4618-9ba9-d040953192b5.png"
               alt="Background Image" class="background-image bg-img-dorm">
-            <iframe class="vidyard_iframe overlay-video dorm" title="SNHU Tour of Monadnock Dorm '24"
-              src="https://play.vidyard.com/UeMmLXy7gKuiiabeuNpBAz.html?disable_autoplay=1" width="640" height="360"
-              scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <iframe class="vidyard_iframe overlay-video dorm" title="Duplicate of SNHU Tour of Monadnock Dorm '24" src="//play.vidyard.com/Vv1twNb6N6ibxD8db6pShs.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -243,10 +815,10 @@
         </div>
         <div class="col-md-7 ">
           <h2 class="text-left parent-text ">We can't wait to meet you!</h2>
-          <p>Ready to take your next step? Schedule your tour to see campus for yourself or apply for the free online and make it official.</p>
+          <p>Ready to take your next step? Schedule your tour to see campus for yourself or apply today and make it official.</p>
           <div class="btn-group-wait">
-          <a class="btn btn-secondary">Schedule Visit</a>
-          <a class="btn btn-secondary">Apply Free</a>
+          <a id="schedule-visit1" class="btn btn-secondary" href="https://cloud.dream.snhu.edu/campus-event-listing-directory#campusevents"  target="_blank">Schedule Visit</a>
+          <a id="apply-now1" class="btn btn-secondary" href="https://www.snhu.edu/admission/campus-admission" target="_blank" onclick="fbq('track', 'SubmitApplication'); ttq.track('SubmitForm'); snaptr('track', 'CUSTOM_EVENT_1');">Apply Now</a>
         </div>
         </div>
       </div>
@@ -258,8 +830,8 @@
     <div class="container">
       <div class="row align-items-center sm-col-rev">
         <div class="col-md-6  ">
-          <h2>At SNHU we believe in hands on learning experiences</h2>
-          <p>You’re not just sitting in a lecture hall listening. You’re learning by doing. With programs design to
+          <h2>At SNHU, we believe in hands-on learning</h2>
+          <p>You won't just sit in a lecture hall listening. You'll learn by doing, with programs designed to
             prepare you for your career. You’ll develop real-world skills and the confidence to go out and achieve your
             goals.</p>
         </div>
@@ -280,10 +852,8 @@
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/ab80eed3-3228-4df0-9f6a-922c1de4a05e.png"
               alt="Background Image" class="background-image bg-image-art">
-            <iframe class="vidyard_iframe overlay-video art" title="SNHU School of Arts, Sciences and Education '24"
-              src="//play.vidyard.com/AwByRxChPcgSrRtBjGjYp2.html?" width="640" height="360" scrolling="no"
-              frameborder="0" allowtransparency="true" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <iframe class="vidyard_iframe  overlay-video art" title="Duplicate of SNHU School of Arts, Sciences and Education '24" src="//play.vidyard.com/mK2rvp8W6BhdXYsqhjtv6N.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
@@ -292,13 +862,82 @@
           <p>From studying cells under the microscope in a lab to enjoying the 24 acres of trails in our on-campus
             arboretum, learning at SNHU isn't stuck in a textbook.
             <br><br>
-            Here, you might find yourself student teaching in an elementary classroom or workshopping a social ad with
+            Here, you might find yourself student-teaching in an elementary classroom or workshopping a social ad with
             your peers. If breaking down case studies and analyzing crime scenes is more up your alley, we do that, too.
           </p>
 
-          <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <!-- <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             See majors
-          </button>
+          </button> -->
+
+          <div class="accordion accordion-flush " id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="collapsed dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-arts" aria-expanded="false" aria-controls="flush-collapseOne">
+                  See Majors <span>&#9660;</span> 
+                </button>
+              </h2>
+              <div id="flush-arts" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>BS Biology</li>
+                    <li>BS Biomedical Sciences</li>
+                    <li>BA Communication</li>
+                    <li>BA Creative Writing and English</li>
+                    <ul><li>Fiction Writing</li>
+                    <li>Nonfiction Writing</li> </ul>
+                    <li>BA Education with Licensure*</li>
+                    <ul>
+                      <li>Early Childhood Education (N-3)</li>
+                      <li>Early Childhood Special Education (N-3)</li>
+                      <li>Elementary Education (K-6 or K-8)</li>
+                      <li>Elementary Education and Special Education (K-6 or K-12)</li>
+                      <li>English (5-12)</li>
+                      <li>Science (5-8)</li>
+                      <li>Social Studies (5-12)</li>
+                    </ul>
+                    <li>BA English</li>
+                    <li>BS Environmental Science</li>
+                    <li>BA History</li>
+                    <li>BS Game Art and Interactive Design</li>
+                    <li>BS Game and Simulation Programming</li>
+                    <li>BA Graphic Design and Media Arts</li>
+                    <li>BS Justice Studies</li>
+                    <ul>
+                      <li>Crime and Criminology</li>
+                      <li>Law and Legal Process</li>
+                      <li>Policing and Law Enforcement</li>
+                      <li>Terrorism and Homeland Security</li>
+                    </ul>
+                    <li>BA Liberal Arts</li>
+                    <li>BA Law, Politics & Societies</li>
+                    <ul>
+                      <li>American Politics</li>
+                     <li>Global Affairs</li>
+                     <li>Livable Local Communities</li>
+                       <li>Legal Studies</li>
+                      <Li>Social, Equity, Diversity & Inclusion</Li>
+                      <Li>Sustainable Societies</Li>
+                    </ul>
+                    <li>BA Mathematics</li>
+                    <li>BA Psychology</li>
+                    <ul>
+                      <li>Child and Adolescent Development</li>
+                      <li>Forensic Psychology</li>
+                      <li>Mental Health</li>
+                    </ul>
+                    <li>BA Sociology</li>
+                  </ul>
+<p>
+  *This program and its concentrations are also accredited by
+the Council for the Accreditation of Educator Preparation (CAEP).
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -316,27 +955,130 @@
             Through group case studies, our sales immersion lab and on-campus competitions, you can build the real-life
             experience employers are looking for.
           </p>
-          <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            See majors
-          </button>
+          <div class="accordion accordion-flush " id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header bg-lightgray" id="flush-headingOne">
+                <button class="collapsed dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-business" aria-expanded="false" aria-controls="flush-collapseOne">
+                  See Majors <span>&#9660;</span> 
+                </button>
+              </h2>
+              <div id="flush-business" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-lightgray">
+                  <ul class="no-bullets">
+                 <Li>Applied BS of Business Administration (3-Year Degree**)</Li>
+                   <UL>
+                     <li>Accounting</li>
+                    <li>Business Analytics</li>
+                    <li>Entrepreneurship</li>
+                    <li>Finance</li>
+                    <li>Hospitality Business</li>
+                    <Li>Management Information Systems</Li>
+                    <Li>Marketing</Li>
+                    <Li>Operations & Project Management</Li>
+                    <Li>Professional Sales</Li>
+                     <li>Sport Management</li>
+                    </UL>
+
+                    <li>BS Accounting*</li>
+                    <Li>AS Accounting</Li>
+                    <li>BS Accounting and Finance*</li>
+                    <li>BS Business Administration*</li>
+                    <ul>
+                      <li>Accounting</li>
+                      <li>Aviation Management</li>
+                      <li>Business Analytics</li>
+                      <li>Entrepreneurship</li>
+                      <li>Finance</li>
+                      <li>Hospitality Business</li>
+                      <li>Management Information Systems</li>
+                      <li>Marketing</li>
+                      <li>Operations and Project Management</li>
+                      <li>Professional Sales</li>
+                      <li>Sport Management</li>
+                    </ul>
+                    <li>BS Computer Information Systems*</li>
+                    <li>BS Entrepreneurship</li>
+                    <li>BS Economics and Finance*</li>
+                    <li>BS Finance</li>
+                    <li>AS Finance</li>
+                    <li>BS Marketing*</li>
+                    <li>BS Sport Management*</li>
+                  </ul>
+                  *This program and its concentrations are also accredited by the Accreditation Council for Business Schools and Programs (ACBSP).<br><br>**The Applied Bachelor of Science in Business Administration at Southern New Hampshire University (SNHU) is a 93-credit, three-year (six-semester) program designed to provide students with an accelerated bachelor’s degree. This reduced-time and reduced-credit program has been approved by SNHU’s institutional accreditor, the New England Commission of Higher Education (NECHE). However, the standard baccalaureate degree remains a four-year (eight-semester), 120-credit program. Students who choose this pathway can complete both their bachelor’s degree and MBA in just four years*.
+ 
+This program meets admission requirements for SNHU master’s degrees, but students should be aware that other institutions may have different admission criteria. Prospective graduate students are encouraged to verify specific requirements with their intended institutions.
+ 
+The Applied Bachelor of Science in Business Administration includes learning experiences with translatable skills to help build a solid resume and prepare graduates for the workforce. However, as this is a novel program structure, students should be aware that some employers may have varying perspectives on a three-year degree.
+ 
+* Dependent on students maintaining full time enrollment in both the Applied Bachelor of Science in Business Administration and the MBA.
+                                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-md-6 ">
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/b4d8876b-066b-43c7-8016-4c8a7a76d519.png"
               alt="Background Image" class="background-image bg-img-business ">
-            <iframe class="vidyard_iframe overlay-video business" title="SNHU School of Business '24"
-              src="//play.vidyard.com/HZxyUEgWsjTNfJoPA4GmUX.html?" width="640" height="360" scrolling="no"
-              frameborder="0" allowtransparency="true" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <iframe class="vidyard_iframe overlay-video business" title="Duplicate of SNHU School of Business '24" src="//play.vidyard.com/7MX5Hmsp6f8b66zwuFf9Fi.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="py-5 bg-skyblue">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-6 align-items-center"><img class="w-100" src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/a15f05d0-37f9-4726-b28a-325bfbe676ac.png" alt="working on laptop"></div>
+        <div class="col-md-6">
+           <h2 class="parent-text">NEW  3-year Applied Bachelor of Science in Business Administration*</h2>
+            <p>At SNHU, you can earn your business degree in just <strong>3 years</strong> — saving time and money while gaining real-world experience. Our<strong> Applied Bachelor of Science (BSA) in Business Administration*</strong> combines hands-on learning with essential business skills to prepare you for success across industries. Plus, with our accelerated 93-credit program, you can complete your bachelor’s and MBA in only <strong>4 years total</strong> when enrolled full time.**</p>
+        <br>
+
+<div class=" accordion-transparent-bg" id="concentrationsAccordion" style="border: none !important;">
+  <div class="accordion-item accordion-transparent-bg" >
+    <h2 class="accordion-header accordion-transparent-bg">
+      <button class="accordion-button accordion-transparent-bg concentrations-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConcentration" aria-expanded="true" aria-controls="collapseOne">
+        <strong>See Concentrations </strong>
+      </button>
+    </h2>
+    <div id="collapseConcentration" class="accordion-collapse collapse" data-bs-parent="#concentrationsAccordion">
+      <div class="accordion-body mt-3">
+        <ul>
+           <li>Accounting</li>
+           <li>Business Analytics</li>
+           <li>Entrepreneurship</li>
+           <li>Finance</li>
+           <li>Hospitality Business</li>
+           <li>Management Information Systems</li>
+           <li>Marketing</li>
+           <li>Operations & Project Management</li>
+           <li>Professional Sales</li>
+           <li>Sport Management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="mt-5">*The Applied Bachelor of Science in Business Administration at Southern New Hampshire University (SNHU) is a 93-credit, three-year (six-semester) program designed to provide students with an accelerated bachelor’s degree. This reduced-time and reduced-credit program has been approved by SNHU’s institutional accreditor, the New England Commission of Higher Education (NECHE). However, the standard baccalaureate degree remains a four-year (eight-semester), 120-credit program. Students who choose this pathway can complete both their bachelor’s degree and MBA in just four years*. This program meets admission requirements for SNHU master’s degrees, but students should be aware that other institutions may have different admission criteria. Prospective graduate students are encouraged to verify specific requirements with their intended institutions. The Applied Bachelor of Science in Business Administration includes learning experiences with translatable skills to help build a solid resume and prepare graduates for the workforce. However, as this is a novel program structure, students should be aware that some employers may have varying perspectives on a three-year degree.
+          
+          <br> <br>
+**Dependent on students maintaining full time enrollment in both the Applied Bachelor of Science in Business Administration and the MBA.
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Tech -->
-  <section class="bg-lightgray py-5">
+  <section class="py-5">
     <div class="container">
       <div class="row ">
 
@@ -344,11 +1086,7 @@
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/b911ea76-eee1-4a97-827a-00dacd797f04.png"
               alt="Background Image" class="background-image bg-img-tech">
-            <iframe class="vidyard_iframe overlay-video tech"
-              title="SNHU School of Engineering, Technology and Aeronautics '24"
-              src="//play.vidyard.com/73EDZB9N6t6bBDm3rEqBZ5.html?" width="640" height="360" scrolling="no"
-              frameborder="0" allowtransparency="true" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="vidyard_iframe overlay-video tech" title="Duplicate of SNHU School of Engineering, Technology and Aeronautics '24" src="//play.vidyard.com/64k72PCSZ3aBdnoTLue9DP.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
@@ -365,9 +1103,36 @@
             With a drone-flying arena, unmanned aerial vehicle prep space, woodshop, robotics lab and more, you'll have
             all the tools at hand to bring your ideas off the page.
           </p>
-          <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            See majors
-          </button>
+          <div class="accordion accordion-flush " id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="flush-headingOne">
+                <button class="collapsed dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-tech" aria-expanded="false" aria-controls="flush-collapseOne">
+                  See Majors <span>&#9660;</span> 
+                </button>
+              </h2>
+              <div id="flush-tech" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>BS Aeronautical Engineering*</li>
+                    <li>BS Computer Science</li>
+                    <li>BS Construction Management</li>
+                    <li>BS Cybersecurity</li>
+                    <li>BS Electrical Engineering*</li>
+                    <li>BS Engineering Technology</li>
+                    <li>AS Engineering Technology</li>
+                    <li>BS Information Technologies</li>
+                    <li>BS Mechanical Engineering*</li>
+                    <li>BS Physics</li>
+                  </ul>
+                  
+                  
+                  Not all programs are available to international students. Please check with our admission team at <a href="mailto:admission@snhu.edu">admission@snhu.edu</a><Br><br>
+                  *This program is also accredited by the Accreditation Board for Engineering and Technology (ABET).
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -375,27 +1140,83 @@
   </section>
 
   <!--Support -->
-  <section class=" py-5">
+  <section class="bg-lightgray py-5">
     <div class="container">
       <div class="row sm-col-rev  ">
         <div class="col-md-6 d-flex flex-column justify-content-center">
           <h2>Student support like no other</h2>
           <p>We surround each student with a constellation of support that includes academics and advising,
-            accessibility, career services, nutrition  and health and wellness including counseling. At SNHU, you’re one
+            accessibility, career services, nutrition, and health and wellness, including counseling. At SNHU, you’re one
             of us — and you never have to face any situation alone.</p>
-          <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            See student support resources
-          </button>
+            <div class="accordion accordion-flush " id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header bg-lightgray" id="flush-headingOne">
+                  <button class="collapsed dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-support" aria-expanded="false" aria-controls="flush-collapseOne">
+                    See Student Support Resources <span>&#9660;</span> 
+                  </button>
+                </h2>
+                <div id="flush-support" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body bg-lightgray">
+                    <ul>
+                      <li>
+                        <strong>Academic Advising</strong><br>
+                        Your advisor is here to help. Explore opportunities and overcome challenges on the way to your degree together.
+                      </li>
+                      <li>
+                        <strong>Career Development Center</strong><br>
+                        You're here to prepare for what's next. From resume reviews to interview practice, get help navigating your next step.
+                      </li>
+                      <li>
+                        <strong>Office of Diversity Programs</strong><br>
+                        You belong at SNHU. That's why we're building a diverse and inclusive community to help you fit in while still standing out.
+                      </li>
+                      <li>
+                        <strong>Wellness Center</strong><br>
+                        Your wellbeing matters. With our licensed health center, you can get free, confidential general and mental health support.
+                      </li>
+                      <li>
+                        <strong>Veterans Lounge</strong><br>
+                        We support those who've served. You can use this space to relax, receive guidance and find your community.
+                      </li>
+                      <li>
+                        <strong>Campus Accessibility Center</strong><br>
+                        We believe education is for everyone. Whether an accommodation is physical or academic, we're here to help make the path to a degree possible.
+                      </li>
+                      <li>
+                        <strong>Wolak Learning Center</strong><br>
+                        Learning how to learn is part of the journey. This hub connects you to tutoring, mentoring and study skill seminars.
+                      </li>
+                      <li>
+                        <strong>Student Financial Services
+                      </strong><br>
+                        Going to college is an investment in you. Get info on grants, loans and payment options to help pay for your degree.
+                      </li>
+                      <li>
+                        <strong>Dining Services</strong><br>
+                        You have a lot on your plate. So take a break and join your friends in the dining hall or stop by our (brand new!) Dunkin' and Einstein Bros.
+                      </li>
+                      <li>
+                        <strong>Debra L. Coffin Women’s Center</strong><br>
+                        We're curating a safe space for all. Programming and conversations on gender-related social issues flourish here.
+                      </li>
+                      <li>
+                        <strong>International Student Services</strong><br>
+                        College can seem like a whole new world. Here, you can meet others and get advice on cultural, language and immigration topics.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
 
         <div class="col-md-6 ">
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/51c08130-efc8-4dc3-b95c-554dabdf8be1.png"
               alt="Background Image" class="background-image bg-img-support">
-            <iframe class="vidyard_iframe overlay-video support" title="SNHU Student Support '24"
-              src="//play.vidyard.com/x5tY3dFwoDirKFQwUCSxpG.html?" width="640" height="360" scrolling="no"
-              frameborder="0" allowtransparency="true" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              
+              <iframe class="vidyard_iframe overlay-video support " title="Duplicate of SNHU Student Support '24" src="//play.vidyard.com/o7x41SbqkB1HSa8ybempMP.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -420,7 +1241,7 @@
             affordable education.
             <strong>In fact, many of our faculty and staff are first-generation college students!</strong>
             <br> <br>
-            If neither of your parents nor anyone who raised you has graduated with a bachelor's degree, you’re a
+            If neither of your parents, nor anyone who raised you, has graduated with a bachelor's degree, you’re a
             first-generation college student — and we’re thrilled you’re applying to SNHU! 
           </p>
         </div>
@@ -436,11 +1257,11 @@
 
         <div class="col-md-5 ">
           <h2 class="text-left parent-text book-text">Have you booked your campus tour yet?</h2>
-          <p>Come see why Niche ranks SNHU as the #1 campus in New Hampshire. (And we bet we’ll be your #1 campus, too.)
+          <p>Come see why Niche ranks SNHU as the #1 campus in New Hampshire. (And we bet we’ll be your #1 campus, too.) You can also tour our campus without making the trip by visiting our <a href="https://www.youvisit.com/tour/snhu/snhu?tourid=tour3">SNHU Campus Virtual Tour page</a>.
           </p>
           <div class="btn-group-wait">
-          <a class="btn btn-secondary">Schedule Visit</a>
-          <a class="btn btn-secondary">Apply Free</a>
+          <a id="schedule-visit2" class="btn btn-secondary" href="https://cloud.dream.snhu.edu/campus-event-listing-directory#campusevents" target="_blank">Schedule Visit</a>
+            <a id="apply-now2" class="btn btn-secondary" href="https://www.snhu.edu/admission/campus-admission" target="_blank" onclick="fbq('track', 'SubmitApplication'); ttq.track('SubmitForm'); snaptr('track', 'CUSTOM_EVENT_1');">Apply Now</a>
         </div>
         </div>
 
@@ -461,18 +1282,94 @@
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/72732ec1-5d2f-4d27-81ad-ed2987fbdc58.png"
               alt="Background Image" class="background-image bg-img-sport">
-              <iframe class="vidyard_iframe sport overlay-video" title="SNHU Volleyball '24" src="//play.vidyard.com/BWEL2BHpFj7bFXevYJaReN.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="vidyard_iframe sport overlay-video" title="Duplicate of SNHU Volleyball '24" src="//play.vidyard.com/NSJj1jrwFKUt1a2cUZrdNY.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
         <div class="col-md-6 d-flex flex-column justify-content-center">
           <h2>Get loud — on the fields or in the stands</h2>
-          <p>With club teams and intramural sports, you don't even have to be a DII athlete to make the team. So hit up
+          <p>With club teams and intramural sports, you don't have to be a DII athlete to make the team. So hit up
             the stadium with 1,500 of your closest friends, and let's show them why we're champions here.
           </p>
-          <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            See teams
-          </button>
+          <div class="accordion accordion-flush " id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="flush-headingOne">
+                <button class="collapsed dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-team" aria-expanded="false" aria-controls="flush-collapseOne">
+                  See Teams <span>&#9660;</span> 
+                </button>
+              </h2>
+              <div id="flush-team" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body ">
+                  <ul>
+                    <li>
+                      <strong>NCAA Division II</strong>
+                      <ul>
+                        <li><strong>Women's</strong>
+                          <ul>
+                            <li>Basketball</li>
+                            <li>Cross-country</li>
+                            <li>Field hockey</li>
+                            <li>Lacrosse</li>
+                            <li>Soccer</li>
+                            <li>Softball</li>
+                            <li>Tennis</li>
+                            <li>Track and field (indoor/outdoor)</li>
+                            <li>Volleyball</li>
+                          </ul>
+                        </li>
+                        <li><strong>Men's</strong>
+                          <ul>
+                            <li>Baseball</li>
+                            <li>Basketball</li>
+                            <li>Cross-country</li>
+                            <li>Golf</li>
+                            <li>Ice hockey</li>
+                            <li>Lacrosse</li>
+                            <li>Soccer</li>
+                            <li>Tennis</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><strong>Varsity</strong>
+                      <ul>
+                        <li>Cheerleading (coed)</li>
+                        <li>Esports (coed)</li>
+                      </ul>
+                    </li>
+                    <li><strong>Intramural</strong>
+                      <ul>
+                        <li>Adaptive sports</li>
+                        <li>Battleship</li>
+                        <li>Cornhole</li>
+                        <li>Dodgeball</li>
+                        <li>Flag football</li>
+                        <li>Futsal</li>
+                        <li>Table tennis</li>
+                        <li>Volleyball</li>
+                      </ul>
+                    </li>
+                    <li><strong>Club Teams</strong>
+                      <ul>
+                        <li>Baseball</li>
+                        <li>Basketball</li>
+                        <li>Dance</li>
+                        <li>Field hockey</li>
+                        <li>Ice Hockey</li>
+                        <li>Lacrosse</li>
+                        <li>Soccer</li>
+                        <li>Tennis</li>
+                        <li>Ultimate frisbee</li>
+                        <li>Volleyball</li>
+                        <li>Wrestling</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -494,7 +1391,7 @@
             things you do.
           </p>
           <br>
-          <strong>See full list of <a href="" class="text-decoration-underline">student clubs.</a></strong>
+          <strong>See <a href="https://www.snhu.edu/student-experience/campus-experience/student-organizations-and-leadership/student-organizations-and-clubs" class="text-decoration-underline"  target="_blank">Student Clubs</a></strong>
         </div>
         <div class="col-md-6">
           <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/06324d37-ba91-4757-a777-e51048ed0641.png"
@@ -514,10 +1411,8 @@
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/1b834287-b73a-4ba7-b750-129a617473dc.png"
               alt="Background Image" class="background-image bg-img-sport">
-            <iframe class="vidyard_iframe overlay-video esport" title="SNHU Esports '24"
-              src="//play.vidyard.com/wjkDe95YHUxexDJ68yAH4C.html?" width="640" height="360" scrolling="no"
-              frameborder="0" allowtransparency="true" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <iframe class="vidyard_iframe overlay-video esport" title="Duplicate of SNHU Esports '24" src="//play.vidyard.com/kTFEy5hiaaMwZbQoaAZcdn.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
@@ -542,11 +1437,11 @@
         <div class="col-md-6  ">
           <h2>In-state or out-of-state, it’s the same low tuition</h2>
           <p>At Southern New Hampshire University, we're on a mission to make high-quality education more accessible by
-            making it more affordable. With 70+ career-focused majors, state-of-the-art facilities, D2 sports, and over
+            making it more affordable. With 70+ career-focused majors, state-of-the-art facilities, DII sports and over
             60 student clubs and organizations, you can get the campus experience you've always dreamed of at a more
             affordable price. </p>
           <br>
-          <strong>See <a href="" class="text-decoration-underline">campus tuition and fees</a></strong>
+          <strong>See <a href="https://www.snhu.edu/tuition-and-financial-aid/campus" class="text-decoration-underline"  target="_blank">Campus Tuition and Fees</a></strong>
         </div>
         <div class="col-md-6">
           <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/f03fbda0-59b8-4263-92bf-28993808be4d.png"
@@ -566,7 +1461,8 @@
           <div class="image-video-container">
             <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/11e55e6b-8ac6-443d-b7f6-12aa60c04762.png"
               alt="Background Image" class="background-image bg-img-sport">
-              <iframe class="vidyard_iframe overlay-video manchester" title="SNHU — Welcome to Manchester '24" src="//play.vidyard.com/d5SoEY3KgWdQa3oSUdAmah.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+              <iframe class="vidyard_iframe overlay-video manchester" title="Duplicate of SNHU — Welcome to Manchester '24" src="//play.vidyard.com/cRnXryqDnbDx3uhhmTEqU9.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
@@ -575,7 +1471,7 @@
           <p>Living like a local is more than knowing the best food spots in town (and there’s a lot of ‘em). It’s
             cheering on the Fisher Cats with your best friends. It’s taking a watercolor class at the Currier Museum of
             Art. It’s catching a performance at the Palace Theatre. But if you’re looking to head out of town, you can
-            also find mountains, beaches and Boston only an hour away.  
+            also find mountains, beaches and the city of Boston only an hour away.  
           </p>
         </div>
 
@@ -589,7 +1485,7 @@
       <div class="row align-items-center sm-col-rev">
         <div class="col-md-6  ">
           <h2>Gold and blue look good on you</h2>
-          <p>From books and water bottles to SNHU gear and more, swing by the bookstore so you’ll be ready for class on
+          <p>From books and water bottles to SNHU gear and more, swing by the <a href="https://bncvirtual.com/snhu"  target="_blank">bookstore</a> so you’ll be ready for class on
             day one. No matter what you choose to wear, how you get involved or what your goals are — you’re one of us.
           </p>
 
@@ -610,8 +1506,8 @@
         <div class="col-md-12">
           <h2 class="parent-text">Are you a parent or supporter of a student?</h2>
           <p class="parent-text-p">We love to speak with student family and supporters about admission, life at SNHU,
-            financial aid or anything else you’d like to discuss. Give us a call at (603) 645-9611 or email us at
-            admission@snhu.edu</p>
+            financial aid or anything else you’d like to discuss. Give us a call at <a href="tel:6036459611" >603.645.9611 </a> or email us at
+            <a href="mailto:admission@snhu.edu">admission@snhu.edu</a>. Or visit our <a href="https://www.snhu.edu/student-experience/campus-experience/information-for-parents"  target="_blank">SNHU Campus Parents, Families and Supporters Page</a> for more information.</p>
         </div>
       </div>
     </div>
@@ -621,15 +1517,18 @@
     <div class="container">
       <div class="row align-items-center d-flex sm-col-rev">
 
-        <div class="col-md-5 ">
+        <div class="col-md-7 ">
           <h2 class="text-left parent-text">We’re not SNHU without you</h2>
-          <p>At Southern New Hampshire University, you’re our top choice. Apply for free online and meet the community
+          <p>At Southern New Hampshire University, you’re our top choice. Apply now online and meet the community
             that’s been waiting for you.</p>
-          <button class="btn btn-secondary">Schedule Visit</button>
-          <button class="btn btn-secondary">Apply Free</button>
+          <div class="btn-group-wait">
+            
+           <a id="schedule-visit3" class="btn btn-secondary" href="https://cloud.dream.snhu.edu/campus-event-listing-directory#campusevents" target="_blank">Schedule Visit</a>
+         <a id="apply-now3" class="btn btn-secondary" href="https://www.snhu.edu/admission/campus-admission" target="_blank"  onclick="fbq('track', 'SubmitApplication'); ttq.track('SubmitForm'); snaptr('track', 'CUSTOM_EVENT_1');">Apply Now</a>
+             </div>
         </div>
 
-        <div class="col-md-7 booked-img">
+        <div class="col-md-5 booked-img">
           <img src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/6578ad07-a6b6-44ef-b951-70ee29a7c90b.png"
             class="w-100 mb-3" alt="Students on a bench">
         </div>
@@ -656,7 +1555,7 @@
             </path>
           </svg>
           <h3 class="fs-5 pt-3">Phone</h3>
-          <p>603.645.9611</p>
+          <p><a href="tel:6036459611" >603.645.9611 </a></p>
         </div>
 
         <div class="col-lg-3 px-5 py-3">
@@ -667,7 +1566,7 @@
             </path>
           </svg>
           <h3 class="fs-5 pt-3">Email</h3>
-          <p>admissions@snhu.edu</p>
+          <p><a href="mailto:admission@snhu.edu">admission@snhu.edu</a></p>
         </div>
 
 
@@ -676,7 +1575,7 @@
     </div>
   </div>
 
-  <section class=" mb-5 py-5 bg-lightgray">
+  <section class="  py-5 bg-lightgray">
     <div class="container">
       <div class="row">
         <h2 class="s30"> Frequently Asked Questions</h2>
@@ -689,26 +1588,13 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Provide"
               aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-headingThree">
-                Why does my account center only show charges?
-              </h4>
+                Is it free to apply for U.S. residents?
+                            </h4>
             </button>
             <div id="Provide" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <ul>
-                  <li>Financial aid will display in the <a
-                      href="https://secure.touchnet.net/C20076_tsa/web/caslogin.jsp">Student Account Center</a> once it
-                    has disbursed (beginning in week 3 of each term if all eligibility requirements are met).</li>
-                  <li>Until disbursement, you will only see charges for terms for which you are registered and will be
-                    billed.</li>
-                  <li>Please review your <a href="https://cloud.dream.snhu.edu/financial-aid-offer-gc">financial aid
-                      offer</a> to determine your eligibility for financial aid.</li>
-                  <ul>
-                    <li>Financial aid is displayed by trimester on your financial aid offer.</li>
-                    <li>Each trimester consists of 2 8-week terms for online undergraduate students.</li>
-                    <li>You will receive 2 disbursements each trimester in each of the terms you attend.</li>
-                  </ul>
-                </ul>
+                Yes, it's free to apply to SNHU on the Common App. As part of our mission to increase access to higher education, we do not charge application fees for U.S. residents.
 
               </div>
             </div>
@@ -719,26 +1605,16 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#useChrome" aria-expanded="false" aria-controls="useChrome">
               <h4 class="accordion-header" id="useChrome-header">
-                When will I received excess loan funding from my financial aid?
+                Is SNHU for-profit or nonprofit? Is it private or public?
               </h4>
             </button>
             <div id="useChrome" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <ul>
-                  <li>If all eligibility requirements are met, financial aid begins to disburse in week 3 of the term.
-                  </li>
-                  <li>SNHU disburses financial aid twice per trimester both times in the first term.</li>
-                  <li>You will always see funds post to the first term of your trimester in the Student Account Center
-                    even if we are disbursing for term 2 charges.</li>
-                  <li>Additional processing time is needed to run payments and billing through our system – please allow
-                    3 business days from the date of your original disbursement to view charges and credits by term in
-                    the Student Account Center.</li>
-                  <li>Once your tuition has been paid with your financial aid and if a credit balance results for the
-                    term, it will then be transferred to BankMobile within 14 days. If you have a prior term balance
-                    SNHU may apply your funds to that balance.</li>
-                  <li>You will receive an email from BankMobile once excess funding has been processed.</li>
-                </ul>
+                SNHU is a nonprofit, 501(c)(3) institution with a mission — your success. According to the National Center for Education Statistics, students who pursue their bachelor's degree at private nonprofit institutions have much higher graduation rates than their counterparts at for-profit schools. 
+                <br><br>
+SNHU is a private, fully accredited institution. As a private university, we rely heavily on private donations, contributions and tuition to provide nationally recognized education to our students. SNHU offers countless resources to ensure student success, including, but not limited to, merit-based scholarship programs, dedicated advisor support and lifetime access to career services for alumni.
+
 
               </div>
             </div>
@@ -749,27 +1625,13 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#studyOnline" aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-headingThree">
-                Why do I see financial aid disbursements move around on my account? Is this correct?
+                Does SNHU require SAT/ACT or GRE/GMAT scores?
               </h4>
             </button>
             <div id="studyOnline" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <ul>
-                  <li>You will always see funds post to the first term of your trimester in the Student Account Center
-                    even if we are disbursing for term 2 charges.</li>
-                  <li>Additional processing time is needed to run payments and billing through our system – please allow
-                    3 business days from the date of your original disbursement to view charges and credits by term in
-                    the Student Account Center.</li>
-                  <li>Please review your <a href="https://cloud.dream.snhu.edu/financial-aid-offer-gc">financial aid
-                      offer</a> to determine your eligibility for financial aid.</li>
-                  <ul>
-
-                    <li>Financial aid is displayed by trimester on your financial aid offer.</li>
-                    <li>Each trimester consists of 2 8-week terms for online undergraduate students.</li>
-                    <li>You will receive 2 disbursements each trimester in each of the terms you attend.</li>
-                  </ul>
-                </ul>
+                No, SNHU does not require scores on standardized tests like the SAT, ACT, GMAT or GRE. We believe that these tests do not effectively measure a student's subject knowledge or their ability to succeed.
 
               </div>
             </div>
@@ -782,32 +1644,13 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#internetAccess" aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-headingIA">
-                Why did I receive a revised financial aid offer?  
+                Does SNHU require supplemental essays on the Common App? 
               </h4>
             </button>
             <div id="internetAccess" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <ul>
-                  <li>SNHU is required to notify students of changes to financial aid eligibility.</li>
-                  <li>You may receive a revised financial aid offer based on the following:</li>
-                  <ul>
-                    <li>A change in enrollment resulting in a change to your financial aid eligibility (dropping or
-                      adding coursework within a trimester).</li>
-                    <li>You requested a change that was recently processed on your account.</li>
-                    <li>The Department of Education has notified us of a change to your eligibility for financial aid.
-                    </li>
-                    <li>An adjustment to amounts of aid on your account.</li>
-                  </ul>
-
-                  <li>Please review your <a href="https://cloud.dream.snhu.edu/financial-aid-offer-gc">financial aid
-                      offer</a> to determine your eligibility for financial aid.</li>
-                  <ul>
-                    <li>Financial aid is displayed by trimester on your financial aid offer.</li>
-                    <li>Each trimester consists of 2 8-week terms for online undergraduate students.</li>
-                    <li>You will receive 2 disbursements each trimester in each of the terms you attend.</li>
-                  </ul>
-                </ul>
+                No. SNHU doesn't require supplemental essays for admission through the <a href="https://www.commonapp.org/explore/southern-new-hampshire-university" target="_blank">Common App</a>, but we do require a personal essay as part of the individual section on the Common App.
 
               </div>
             </div>
@@ -821,21 +1664,16 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#finacialAid" aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-headingFA">
-                What is the disclosure statement from the Department of Education?
+                Where is the SNHU campus?
               </h4>
             </button>
             <div id="finacialAid" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <ul>
-                  <li>The disclosure statement from the Dept. of Education informs the borrower of the approximate
-                    date(s) the loan funds are expected to be disbursed, the anticipated disbursement amounts, and
-                    discloses certain loan terms and conditions.</li>
-                  <li>The date on the form is NOT the date when you will receive your excess loan funding.</li>
-                  <li>Once funds are disbursed to your account and a credit balance/refund is created, funds will be
-                    processed to BankMobile within 14 calendar days.</li>
-                </ul>
-
+                SNHU’s 300-acre campus is situated at 2500 North River Road in Manchester, New Hampshire — just minutes from downtown Manchester and about an hour from the city of Boston, the seacoast and the mountain region of New Hampshire. 
+                <br><br>
+                We invite you to <a href="https://cloud.dream.snhu.edu/campus-event-listing-directory" target="_blank">schedule a campus tour</a>, available on both weekdays and weekends throughout the year.
+                
               </div>
             </div>
           </div>
@@ -848,17 +1686,16 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#micro365" aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-heading365">
-                Is there any way to speed up my excess loan funding?
+                How many students attend the SNHU campus? 
               </h4>
             </button>
             <div id="micro365" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <ul>
-                  <li>SNHU is not able to expedite this process.</li>
-                  <li>We understand this is important, and our teams are working diligently to process all accounts as
-                    quickly and accurately as possible.</li>
-                </ul>
+                There are approximately 2,800 undergraduate students attending the SNHU campus. 64% of these undergraduates live on campus, with the remainder commuting from surrounding New England communities.
+                    <br><br>
+                Fun fact: Our students come from 37 U.S. states and 48 countries!
+
 
               </div>
             </div>
@@ -872,16 +1709,13 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#why-wait" aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-heading365">
-                Why have the wait times been so long to get through to Student Financial Services?
+                What’s the average GPA for the incoming 2024 undergraduate class?
               </h4>
             </button>
             <div id="why-wait" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <ul>
-                  <li>A recent system upgrade has required us to run internal processes in a new way.</li>
-                  <li>We appreciate your patience as we work through these new processes as quickly as possible.</li>
-                </ul>
+                The average grade-point average (GPA) for the incoming 2024 undergraduate class is 3.25.
 
               </div>
             </div>
@@ -893,18 +1727,28 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#calculate" aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-heading365">
-                Is there a way for me to calculate on my own how much my excess loan funding will be?
+                Is SNHU accredited?
               </h4>
             </button>
             <div id="calculate" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
+                Yes, Southern New Hampshire University is institutionally accredited by the New England Commission of Higher Education, Inc. (NECHE). All programs offered by SNHU are also encompassed by this regional institutional accreditation.
+<br><br>
+                <strong>Programmatic Accreditations</strong> <br> <br>
+                In addition to having regional accreditation, certain SNHU undergraduate and graduate programs also carry specialized programmatic accreditations, including:
+                <br> <br>
                 <ul>
-                  <li>Once your funds have posted, SNHU can help you calculate your estimated excess loan funding. Once
-                    your excess loan funds are processed you will receive an email from BankMobile.</li>
-                  <li>Past due balances may affect the amount of excess loan funding available to you.</li>
-                  <li>All or a portion of your financial aid may be used to cover a prior balance.</li>
+                  <li>Accreditation Council for Business Schools and Programs (ACBSP)</li>
+                  <li>Commission on Accreditation for Health Informatics and Information Management Education (CAHIIM)</li>
+                  <li>Commission on Collegiate Nursing Education (CCNE)</li>
+                  <li>Council for Accreditation of Counseling and Related Educational Programs (CACREP)</li>
+                  <li>Council for the Accreditation of Educator Preparation (CAEP)</li>
+                  <li>Council on Education for Public Health (CEPH)</li>
+                  <li>Engineering Accreditation Commission of ABET (Accreditation Board for Engineering and Technology)</li>
+                  <li>New Hampshire State Department of Education for Teacher Certification</li>
                 </ul>
+                
 
               </div>
             </div>
@@ -917,18 +1761,17 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment"
               aria-expanded="false" aria-controls="flush-collapseThree">
               <h4 class="accordion-header" id="flush-heading365">
-                When is my payment due?
+                What’s the difference between financial aid loans and grants?
               </h4>
             </button>
             <div id="payment" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 <ul>
-                  <li>Once your funds have posted, SNHU can help you calculate your estimated excess loan funding. Once
-                    your excess loan funds are processed you will receive an email from BankMobile.</li>
-                  <li>Past due balances may affect the amount of excess loan funding available to you.</li>
-                  <li>All or a portion of your financial aid may be used to cover a prior balance.</li>
+                  <li>Grants are awarded funds that DO NOT have to be paid back.*</li>
+                  <li>Loans are borrowed funds that DO have to be paid back.</li>
                 </ul>
+                *Students who fail to complete the academic period for which the Federal Pell Grant was offered will be asked to pay back a portion of the grant.
 
               </div>
             </div>
@@ -938,7 +1781,7 @@
       </div>
     </div>
   </section>
-
+</div>
   <!--Accreditation-->
 
   <div role="region" aria-label="Accreditations"
@@ -952,19 +1795,18 @@
 
   <footer class="container-fluid" style="background-color: #00244E;">
     <div class="col-10 d-flex flex-wrap justify-content-between align-items-center px-3 px-md-5 py-5 mx-auto">
-      <p class="col-md-4 lh-lg" style="color:#fff"><strong>SNHU Student Financial Services</strong><br>
-        55 S. Commercial Street, Manchester, NH 03101<br>
-        Office Phone: 888.387.0864<br>
-        admissions@snhu.edu</p>
-      <a href="https://www.snhu.edu/" target="_blank"
+      <p class="col-md-4 lh-lg" style="color:#fff"><strong>SNHU Campus Admission</strong><br>
+        2500 N. River Road, Manchester, NH 03106<br>
+        <a href="tel:6036459611" >603.645.9611 </a><br>
+        <a href="mailto:admission@snhu.edu">admission@snhu.edu</a></p>
+      <a href="https://campus.snhu.edu/" target="_blank"
         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
         <img
           src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
           height="80" alt="SNHU logo">
       </a>
-      </a>
       <p class="col-md-4 justify-content-end lh-lg text-md-end" style="color: #fff;">
-        © 2024<br>
+        © %%=FormatDate(Now(), "yyyy")=%%<br>
         Southern New Hampshire University<br>
         View our <a href="https://www.snhu.edu/privacy-policy" class="text-link">Privacy Policy</a> | <a
           href="https://www.snhu.edu/about-us/accessibility" class="text-link">Accessibility at SNHU</a>
@@ -972,3 +1814,98 @@
     </div>
   </footer>
   </div>
+  
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1643573952521690');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1643573952521690&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  
+  <!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject = t;
+  var ttq = w[t] = w[t] || [];
+  ttq.methods = [
+    "page","track","identify","instances","debug","on","off",
+    "once","ready","alias","group","enableCookie","disableCookie"
+  ];
+  ttq.setAndDefer = function(t,e){
+    t[e] = function(){
+      t.push([e].concat(Array.prototype.slice.call(arguments,0)))
+    }
+  };
+  for (var i = 0; i < ttq.methods.length; i++) {
+    ttq.setAndDefer(ttq, ttq.methods[i]);
+  }
+  ttq.instance = function(t){
+    for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) {
+      ttq.setAndDefer(e, ttq.methods[n]);
+    }
+    return e;
+  };
+  ttq.load = function(e,n){
+    var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i = ttq._i || {};
+    ttq._i[e] = [];
+    ttq._i[e]._u = i;
+    ttq._t = ttq._t || {};
+    ttq._t[e] = +new Date;
+    ttq._o = ttq._o || {};
+    ttq._o[e] = n || {};
+    var o = document.createElement("script");
+    o.type = "text/javascript";
+    o.async = !0;
+    o.src = i + "?sdkid=" + e + "&lib=" + t;
+    var a = document.getElementsByTagName("script")[0];
+    a.parentNode.insertBefore(o,a);
+  };
+
+  // Load your Pixel ID
+  ttq.load('C00R00E9CSIJN7ECQP50');
+  ttq.track('PageView');
+
+  // Track pageview
+  ttq.page();
+
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
+<!-- Snap Pixel Code -->
+<script type="text/javascript">
+(function(e,t,n){
+  if(e.snaptr) return;
+  var a = e.snaptr = function(){
+    a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments);
+  };
+  a.queue = [];
+  var s = 'script';
+  var r = t.createElement(s);
+  r.async = !0;
+  r.src = n;
+  var u = t.getElementsByTagName(s)[0];
+  u.parentNode.insertBefore(r, u);
+})(window, document, 'https://sc-static.net/scevent.min.js');
+
+// Initialize your Snap Pixel
+snaptr('init', '7d05ebe5-4ea3-41fd-84a2-a199e712c76e ', {
+  'user_email': '' // optional hashed identifiers
+});
+
+// Track global Page Views
+snaptr('track', 'PAGE_VIEW');
+</script>
+<!-- End Snap Pixel Code -->

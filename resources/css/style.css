@@ -56,6 +56,10 @@ $font-size-7xl: 4rem; /*64px */
   transform: none;
 }
 
+.concentrations-accordion-btn::after {
+  margin-left: 1rem !important;
+}
+
 /* Font size */
 /* 18px */
 /*20 px*/
@@ -561,10 +565,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 148%; /* 23.68px */
-}
-
-.accordion-button {
-  background-color: #F9F9F9 !important;
 }
 
 .mobile-like-us {
